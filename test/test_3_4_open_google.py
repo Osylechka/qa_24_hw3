@@ -25,7 +25,7 @@ def test_google(driver):
     assert driver.title == "Google"
     assert driver.current_url == url
 
-
+@pytest.mark.selenium
 def test_selenium(driver):
     url = "https://github.com/"
     driver.get(url)
